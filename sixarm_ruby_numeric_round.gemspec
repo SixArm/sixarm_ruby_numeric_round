@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_numeric_round"
   s.summary           = "SixArm.com » Ruby » Numeric round, floor, ceil, truncate methods"
-  s.version           = "1.0.1"
+  s.version           = "1.0.2"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

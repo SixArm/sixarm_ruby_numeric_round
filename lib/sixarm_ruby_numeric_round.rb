@@ -83,7 +83,7 @@ class Float
   # CREDIT: Trans & Joel Parker Henderson
 
   def ceil_at( d ) #d=0
-    (self * (10.0 ** d)).ceil.to_f / (10.0 ** d)
+    (self * (10 ** d)).ceil.fdiv (10 ** d)
   end
 
   # Ceils to the nearest _n_th degree.
@@ -97,7 +97,7 @@ class Float
 
   def ceil_to( n ) #n=1
     return self if n == 0
-    (self * (1.0 / n)).ceil.to_f / (1.0 / n)
+    (self * (1.0 / n)).ceil.fdiv (1.0 / n)
   end
 
   # Floor to the given decimal position.
@@ -110,7 +110,7 @@ class Float
   # CREDIT: Trans & Joel Parker Henderson
 
   def floor_at( d ) #d=0
-    (self * (10.0 ** d)).floor.to_f / (10.0 ** d)
+    (self * (10 ** d)).floor.fdiv (10 ** d)
   end
 
   # Floors to the nearest _n_th degree.
@@ -124,7 +124,7 @@ class Float
 
   def floor_to( n ) #n=1
     return self if n == 0
-    (self * (1.0 / n)).floor.to_f / (1.0 / n)
+    (self * (1.0 / n)).floor.fdiv (1.0 / n)
   end
 
   # Round to the given decimal position.
@@ -137,7 +137,7 @@ class Float
   # CREDIT: Trans & Joel Parker Henderson
 
   def round_at( d ) #d=0
-    (self * (10.0 ** d)).round.to_f / (10.0 ** d)
+    (self * (10 ** d)).round.fdiv (10 ** d)
   end
 
   # Rounds to the nearest _n_th degree.
@@ -151,7 +151,7 @@ class Float
 
   def round_to( n ) #n=1
     return self if n == 0
-    (self * (1.0 / n)).round.to_f / (1.0 / n)
+    (self * (1.0 / n)).round.fdiv (1.0 / n)
   end
 
   # Truncate to the given decimal position.
@@ -164,7 +164,7 @@ class Float
   # CREDIT: Trans & Joel Parker Henderson
 
   def truncate_at( d ) #d=0
-    (self * (10.0 ** d)).truncate.to_f / (10.0 ** d)
+    (self * (10 ** d)).truncate.fdiv (10 ** d)
   end
 
   # Truncates to the nearest _n_th degree.
@@ -178,7 +178,7 @@ class Float
 
   def truncate_to( n ) #n=1
     return self if n == 0
-    (self * (1.0 / n)).truncate.to_f / (1.0 / n)
+    (self * (1.0 / n)).truncate.fdiv (1.0 / n)
   end
 
 end

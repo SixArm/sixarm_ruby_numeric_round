@@ -356,7 +356,7 @@
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
-</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
+</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -406,7 +406,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
-  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -454,7 +454,7 @@
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
-</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
+</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -504,7 +504,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
-  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -552,7 +552,7 @@
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
-</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
+</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -602,7 +602,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
-  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -650,7 +650,7 @@
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
-</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
+</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -700,7 +700,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
-  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -712,7 +712,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sat Sep  1 19:05:01 2012 by
+  Generated on Sat Sep  1 19:25:23 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.1 (ruby-1.9.3).
 </div>
