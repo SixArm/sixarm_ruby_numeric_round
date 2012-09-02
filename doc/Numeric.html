@@ -269,6 +269,54 @@
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#truncate_at-instance_method" title="#truncate_at (instance method)">- (Object) <strong>truncate_at</strong>(*args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Conceptually, truncate is expected to apply to floating point numbers.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#truncate_to-instance_method" title="#truncate_to (instance method)">- (Object) <strong>truncate_to</strong>(*args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>See Float#truncate_to.</p>
+</div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -536,12 +584,98 @@ one could round an Integer to the nearest kilo.</p>
 </table>
 </div>
     
+      <div class="method_details ">
+  <h3 class="signature " id="truncate_at-instance_method">
+  
+    - (<tt>Object</tt>) <strong>truncate_at</strong>(*args) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Conceptually, truncate is expected to apply to floating point numbers.
+However it can actually be applied to pretty much any Numeric object. For
+example, one could truncate an Integer to the nearest kilo.</p>
+
+<p>See Float#truncate_at.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="truncate_to-instance_method">
+  
+    - (<tt>Object</tt>) <strong>truncate_to</strong>(*args) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>See Float#truncate_to.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_to_f'>to_f</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
 </div>
 
     <div id="footer">
-  Generated on Wed May 30 18:32:50 2012 by
+  Generated on Sat Sep  1 19:05:01 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.1 (ruby-1.9.3).
 </div>

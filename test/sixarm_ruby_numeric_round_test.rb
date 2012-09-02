@@ -72,6 +72,28 @@ describe Float do
 
   end
 
+  describe "#truncate_at" do
+
+    it "works" do
+      4.555.truncate_at(0).must_equal 4.0
+      4.555.truncate_at(1).must_equal 4.5
+      4.555.truncate_at(2).must_equal 4.55
+      4.555.truncate_at(3).must_equal 4.555
+    end
+
+  end
+
+  describe "#truncate_to" do
+
+    it "works" do
+      4.555.truncate_to(1).must_equal 4.0
+      4.555.truncate_to(0.1).must_equal 4.5
+      4.555.truncate_to(0.01).must_equal 4.55
+      4.555.truncate_to(0).must_equal 4.555
+    end
+
+  end
+
 end
 
 

@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_numeric_round"
-  s.summary           = "SixArm.com » Ruby » Numeric round, floor, ceil methods"
-  s.version           = "1.0.0"
+  s.summary           = "SixArm.com » Ruby » Numeric round, floor, ceil, truncate methods"
+  s.version           = "1.0.1"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

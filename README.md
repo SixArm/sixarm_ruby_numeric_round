@@ -50,14 +50,16 @@ Round at a given decimal point:
     4.555.ceil_at(1)  #=> 4.6
     4.555.floor_at(1)  #=> 4.5
     4.555.round_at(1)  #=> 4.6
+    4.555.truncate_at(1)  #=> 4.5
 
 Round to a given precision:
 
     4.555.ceil_to(0.1)   #=> 4.6
     4.555.floor_to(0.1)  #=> 4.5
     4.555.round_to(0.1)  #=> 4.6
+    4.555.truncate_to(0.1)  #=> 4.5
 
-Conceptually, the methods for round, floor, and ceil will typically be for floating point numbers.
+Conceptually, the methods for round, floor, ceil, and truncate will typically be for floating point numbers.
 However, these methods can actually be for pretty much any Numeric object.
 For example, one could round an Integer to the nearest kilo.
 
@@ -73,6 +75,7 @@ We're asking the Facets team to consider including the rest of the methods.
 
 ## Changes
 
+* 2012-09-01 1.0.1 Add #truncate_at and #truncate_to.
 * 2012-05-30 1.0.0 Create baesd on Facets methods by Trans.
 
 

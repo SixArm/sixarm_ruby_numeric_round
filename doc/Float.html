@@ -258,6 +258,54 @@
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#truncate_at-instance_method" title="#truncate_at (instance method)">- (Object) <strong>truncate_at</strong>(d) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Truncate to the given decimal position.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#truncate_to-instance_method" title="#truncate_to (instance method)">- (Object) <strong>truncate_to</strong>(n) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Truncates to the nearest _n_th degree.</p>
+</div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -300,12 +348,12 @@
       <pre class="lines">
 
 
-69
-70
-71</pre>
+85
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 69</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -348,13 +396,13 @@
       <pre class="lines">
 
 
-82
-83
-84
-85</pre>
+98
+99
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -398,12 +446,12 @@
       <pre class="lines">
 
 
-96
-97
-98</pre>
+112
+113
+114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 96</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -446,13 +494,13 @@
       <pre class="lines">
 
 
-109
-110
-111
-112</pre>
+125
+126
+127
+128</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -496,12 +544,12 @@
       <pre class="lines">
 
 
-123
-124
-125</pre>
+139
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 123</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -544,17 +592,115 @@
       <pre class="lines">
 
 
-136
-137
-138
-139</pre>
+152
+153
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 152</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
   <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="truncate_at-instance_method">
+  
+    - (<tt>Object</tt>) <strong>truncate_at</strong>(d) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Truncate to the given decimal position.</p>
+
+<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.0
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.5
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555</span></code></pre>
+
+<p>CREDIT: Trans &amp; Joel Parker Henderson</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+166
+167
+168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 166</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
+</span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>10.0</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="truncate_to-instance_method">
+  
+    - (<tt>Object</tt>) <strong>truncate_to</strong>(n) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Truncates to the nearest _n_th degree.</p>
+
+<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.0
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='float'>0.1</span><span class='rparen'>)</span>   <span class='comment'>#=&gt; 4.5
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='float'>0.01</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555</span></code></pre>
+
+<p>CREDIT: Trans &amp; Joel Parker Henderson</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+179
+180
+181
+182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 179</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
+</span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='float'>1.0</span> <span class='op'>/</span> <span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -566,7 +712,7 @@
 </div>
 
     <div id="footer">
-  Generated on Wed May 30 18:32:51 2012 by
+  Generated on Sat Sep  1 19:05:01 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.1 (ruby-1.9.3).
 </div>

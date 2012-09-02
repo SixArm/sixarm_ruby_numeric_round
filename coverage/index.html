@@ -23,14 +23,14 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-05-30T18:32:53-07:00">2012-05-30T18:32:53-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-09-01T19:04:29-07:00">2012-09-01T19:04:29-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">48.28%</span></span>
+    (<span class="covered_percent"><span class="red">47.37%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -41,9 +41,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>29</b> relevant lines. 
-    <span class="green"><b>14</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed </span>
+    <b>38</b> relevant lines. 
+    <span class="green"><b>18</b> lines covered</span> and
+    <span class="red"><b>20</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,11 +61,11 @@
       
       <tr>
         <td class="strong"><a href="#ee6c013b06fd716ab0509c129567319bac39c936" class="src_link" title="lib/sixarm_ruby_numeric_round.rb">lib/sixarm_ruby_numeric_round.rb</a></td>
-        <td class="red strong">48.28 %</td>
-        <td>141</td>
-        <td>29</td>
-        <td>14</td>
-        <td>15</td>
+        <td class="red strong">47.37 %</td>
+        <td>184</td>
+        <td>38</td>
+        <td>18</td>
+        <td>20</td>
         <td>0.5</td>
       </tr>
       
@@ -88,11 +88,11 @@
         <div class="source_table" id="ee6c013b06fd716ab0509c129567319bac39c936">
   <div class="header">
     <h3>lib/sixarm_ruby_numeric_round.rb</h3>
-    <h4><span class="red">48.28 %</span> covered</h4>
+    <h4><span class="red">47.37 %</span> covered</h4>
     <div>
-      <b>29</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
-      <span class="red"><b>15</b> lines missed.</span>
+      <b>38</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>20</b> lines missed.</span>
     </div>
   </div>
   
@@ -432,514 +432,772 @@
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  # Conceptually, truncate is expected to apply to floating point numbers.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # However it can actually be applied to pretty much any Numeric object.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="58">
           
-          <code class="ruby">class Float</code>
+          
+          <code class="ruby">  # For example, one could truncate an Integer to the nearest kilo.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">  # Ceil to the given decimal position.</code>
+          <code class="ruby">  # See Float#truncate_at.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   4.555.ceil_at(0)  #=&gt; 5.0</code>
+          <code class="ruby">  def truncate_at(*args)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="missed" data-hits="0" data-linenumber="63">
           
           
-          <code class="ruby">  #   4.555.ceil_at(1)  #=&gt; 4.6</code>
+          <code class="ruby">    to_f.truncate_at(*args)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">  #   4.555.ceil_at(2)  #=&gt; 4.56</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">  #   4.555.ceil_at(3)  #=&gt; 4.555</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # See Float#truncate_to.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
-          <code class="ruby">  def ceil_at( d ) #d=0</code>
+          <code class="ruby">  def truncate_to(*args)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="70">
+        <li class="missed" data-hits="0" data-linenumber="69">
           
           
-          <code class="ruby">    (self * (10.0 ** d)).ceil.to_f / (10.0 ** d)</code>
+          <code class="ruby">    to_f.truncate_to(*args)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">  # Ceils to the nearest _n_th degree.</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #</code>
+          <code class="ruby">class Float</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">  #   4.555.ceil_to(1)     #=&gt; 5.0</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">  #   4.555.ceil_to(0.1)   #=&gt; 4.6</code>
+          <code class="ruby">  # Ceil to the given decimal position.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">  #   4.555.ceil_to(0.01)  #=&gt; 4.56</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">  #   4.555.ceil_to(0)     #=&gt; 4.555</code>
+          <code class="ruby">  #   4.555.ceil_at(0)  #=&gt; 5.0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #   4.555.ceil_at(1)  #=&gt; 4.6</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+          <code class="ruby">  #   4.555.ceil_at(2)  #=&gt; 4.56</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
+          <code class="ruby">  #   4.555.ceil_at(3)  #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
-          <code class="ruby">  def ceil_to( n ) #n=1</code>
+          <code class="ruby">  def ceil_at( d ) #d=0</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="83">
+        <li class="missed" data-hits="0" data-linenumber="86">
           
           
-          <code class="ruby">    return self if n == 0</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="84">
-          
-          
-          <code class="ruby">    (self * (1.0 / n)).ceil.to_f / (1.0 / n)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="85">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="86">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    (self * (10.0 ** d)).ceil.to_f / (10.0 ** d)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">  # Floor to the given decimal position.</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">  #   4.555.floor_at(0)  #=&gt; 4.0</code>
+          <code class="ruby">  # Ceils to the nearest _n_th degree.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">  #   4.555.floor_at(1)  #=&gt; 4.5</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
-          <code class="ruby">  #   4.555.floor_at(2)  #=&gt; 4.55</code>
+          <code class="ruby">  #   4.555.ceil_to(1)     #=&gt; 5.0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby">  #   4.555.floor_at(3)  #=&gt; 4.555</code>
+          <code class="ruby">  #   4.555.ceil_to(0.1)   #=&gt; 4.6</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #   4.555.ceil_to(0.01)  #=&gt; 4.56</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+          <code class="ruby">  #   4.555.ceil_to(0)     #=&gt; 4.555</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
           
           
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="96">
+        <li class="covered" data-hits="1" data-linenumber="98">
           <span class="hits">1</span>
           
-          <code class="ruby">  def floor_at( d ) #d=0</code>
+          <code class="ruby">  def ceil_to( n ) #n=1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="97">
+        <li class="missed" data-hits="0" data-linenumber="99">
           
           
-          <code class="ruby">    (self * (10.0 ** d)).floor.to_f / (10.0 ** d)</code>
+          <code class="ruby">    return self if n == 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="98">
+        <li class="missed" data-hits="0" data-linenumber="100">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="99">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="100">
-          
-          
-          <code class="ruby">  # Floors to the nearest _n_th degree.</code>
+          <code class="ruby">    (self * (1.0 / n)).ceil.to_f / (1.0 / n)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby">  #   4.555.floor_to(1)     #=&gt; 4.0</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">  #   4.555.floor_to(0.1)   #=&gt; 4.5</code>
+          <code class="ruby">  # Floor to the given decimal position.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="104">
           
           
-          <code class="ruby">  #   4.555.floor_to(0.01)  #=&gt; 4.55</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">  #   4.555.floor_to(0)     #=&gt; 4.555</code>
+          <code class="ruby">  #   4.555.floor_at(0)  #=&gt; 4.0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #   4.555.floor_at(1)  #=&gt; 4.5</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+          <code class="ruby">  #   4.555.floor_at(2)  #=&gt; 4.55</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
           
           
+          <code class="ruby">  #   4.555.floor_at(3)  #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="109">
+        <li class="covered" data-hits="1" data-linenumber="112">
           <span class="hits">1</span>
           
-          <code class="ruby">  def floor_to( n ) #n=1</code>
+          <code class="ruby">  def floor_at( d ) #d=0</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="110">
+        <li class="missed" data-hits="0" data-linenumber="113">
           
           
-          <code class="ruby">    return self if n == 0</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="111">
-          
-          
-          <code class="ruby">    (self * (1.0 / n)).floor.to_f / (1.0 / n)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="112">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="113">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    (self * (10.0 ** d)).floor.to_f / (10.0 ** d)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">  # Round to the given decimal position.</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="116">
           
           
-          <code class="ruby">  #   4.555.round_at(0)  #=&gt; 5.0</code>
+          <code class="ruby">  # Floors to the nearest _n_th degree.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby">  #   4.555.round_at(1)  #=&gt; 4.6</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="118">
           
           
-          <code class="ruby">  #   4.555.round_at(2)  #=&gt; 4.56</code>
+          <code class="ruby">  #   4.555.floor_to(1)     #=&gt; 4.0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">  #   4.555.round_at(3)  #=&gt; 4.555</code>
+          <code class="ruby">  #   4.555.floor_to(0.1)   #=&gt; 4.5</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #   4.555.floor_to(0.01)  #=&gt; 4.55</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="121">
           
           
-          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+          <code class="ruby">  #   4.555.floor_to(0)     #=&gt; 4.555</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="123">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def round_at( d ) #d=0</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="124">
-          
-          
-          <code class="ruby">    (self * (10.0 ** d)).round.to_f / (10.0 ** d)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="125">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="126">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="127">
-          
-          
-          <code class="ruby">  # Rounds to the nearest _n_th degree.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="128">
-          
-          
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="129">
-          
-          
-          <code class="ruby">  #   4.555.round_to(1)     #=&gt; 5</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="130">
-          
-          
-          <code class="ruby">  #   4.555.round_to(0.1)   #=&gt; 4.6</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="131">
-          
-          
-          <code class="ruby">  #   4.555.round_to(0.01)  #=&gt; 4.56</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="132">
-          
-          
-          <code class="ruby">  #   4.555.round_to(0)     #=&gt; 4.555</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="133">
-          
-          
-          <code class="ruby">  #</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="134">
+        <li class="never" data-hits="" data-linenumber="123">
           
           
           <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="135">
+        <li class="never" data-hits="" data-linenumber="124">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="136">
+        <li class="covered" data-hits="1" data-linenumber="125">
           <span class="hits">1</span>
           
-          <code class="ruby">  def round_to( n ) #n=1</code>
+          <code class="ruby">  def floor_to( n ) #n=1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="137">
+        <li class="missed" data-hits="0" data-linenumber="126">
           
           
           <code class="ruby">    return self if n == 0</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="138">
+        <li class="missed" data-hits="0" data-linenumber="127">
           
           
-          <code class="ruby">    (self * (1.0 / n)).round.to_f / (1.0 / n)</code>
+          <code class="ruby">    (self * (1.0 / n)).floor.to_f / (1.0 / n)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="139">
+        <li class="never" data-hits="" data-linenumber="128">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="140">
+        <li class="never" data-hits="" data-linenumber="129">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby">  # Round to the given decimal position.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="132">
+          
+          
+          <code class="ruby">  #   4.555.round_at(0)  #=&gt; 5.0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="133">
+          
+          
+          <code class="ruby">  #   4.555.round_at(1)  #=&gt; 4.6</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="134">
+          
+          
+          <code class="ruby">  #   4.555.round_at(2)  #=&gt; 4.56</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="135">
+          
+          
+          <code class="ruby">  #   4.555.round_at(3)  #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="136">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="139">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def round_at( d ) #d=0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="140">
+          
+          
+          <code class="ruby">    (self * (10.0 ** d)).round.to_f / (10.0 ** d)</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="143">
+          
+          
+          <code class="ruby">  # Rounds to the nearest _n_th degree.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="144">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">  #   4.555.round_to(1)     #=&gt; 5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby">  #   4.555.round_to(0.1)   #=&gt; 4.6</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby">  #   4.555.round_to(0.01)  #=&gt; 4.56</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="148">
+          
+          
+          <code class="ruby">  #   4.555.round_to(0)     #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="150">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="151">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="152">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def round_to( n ) #n=1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="153">
+          
+          
+          <code class="ruby">    return self if n == 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="154">
+          
+          
+          <code class="ruby">    (self * (1.0 / n)).round.to_f / (1.0 / n)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="155">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="156">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="157">
+          
+          
+          <code class="ruby">  # Truncate to the given decimal position.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="158">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby">  #   4.555.truncate_at(0)  #=&gt; 4.0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="160">
+          
+          
+          <code class="ruby">  #   4.555.truncate_at(1)  #=&gt; 4.5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="161">
+          
+          
+          <code class="ruby">  #   4.555.truncate_at(2)  #=&gt; 4.55</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="162">
+          
+          
+          <code class="ruby">  #   4.555.truncate_at(3)  #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="164">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="165">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="166">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def truncate_at( d ) #d=0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="167">
+          
+          
+          <code class="ruby">    (self * (10.0 ** d)).truncate.to_f / (10.0 ** d)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="168">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="169">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="170">
+          
+          
+          <code class="ruby">  # Truncates to the nearest _n_th degree.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="171">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="172">
+          
+          
+          <code class="ruby">  #   4.555.truncate_to(1)     #=&gt; 4.0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="173">
+          
+          
+          <code class="ruby">  #   4.555.truncate_to(0.1)   #=&gt; 4.5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="174">
+          
+          
+          <code class="ruby">  #   4.555.truncate_to(0.01)  #=&gt; 4.55</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
+          
+          
+          <code class="ruby">  #   4.555.truncate_to(0)     #=&gt; 4.555</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="176">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="177">
+          
+          
+          <code class="ruby">  # CREDIT: Trans &amp; Joel Parker Henderson</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="179">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def truncate_to( n ) #n=1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="180">
+          
+          
+          <code class="ruby">    return self if n == 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="181">
+          
+          
+          <code class="ruby">    (self * (1.0 / n)).truncate.to_f / (1.0 / n)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="182">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="183">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="184">
           
           
           <code class="ruby">end</code>
