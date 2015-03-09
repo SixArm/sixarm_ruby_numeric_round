@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » <br> Numeric #round, #floor, #ceil methods with precision
+# Ruby » <br> Numeric #round, #floor, #ceil methods with precision
 
 * Doc: <http://sixarm.com/sixarm_ruby_numeric_round/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_numeric_round>
