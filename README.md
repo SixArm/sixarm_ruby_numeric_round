@@ -71,9 +71,3 @@ These methods are based on the Facets library for Ruby and the developer named T
 The #round_at and #round_to methods are exact copies and fully compatible with Facets. The rest of the methods are very similar code and fully co-existant with Facets. 
 
 We're asking the Facets team to consider including the rest of the methods.
-
-
-## Changes
-
-* 2012-09-01 1.0.2 Add #truncate_at and #truncate_to; improve floating division.
-* 2012-05-30 1.0.0 Create baesd on Facets methods by Trans.
