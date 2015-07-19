@@ -15,11 +15,16 @@
       <script type="text/javascript" charset="utf-8" src="js/full_list.js"></script>
     
 
+    <title>Method List</title>
     <base id="base_target" target="_parent" />
   </head>
   <body>
     <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) {
+      var hasFrames = false;
+      try {
+        hasFrames = window.top.frames.main ? true : false;
+      } catch (e) { }
+      if (hasFrames) {
         document.getElementById('base_target').target = 'main';
         document.body.className = 'frames';
       }
@@ -47,130 +52,98 @@
         
 
   <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#ceil_at-instance_method" title="Numeric#ceil_at (method)">#ceil_at</a></span>
-    
-      <small>Numeric</small>
-    
-  </li>
-  
-
-  <li class="r2 ">
     <span class='object_link'><a href="Float.html#ceil_at-instance_method" title="Float#ceil_at (method)">#ceil_at</a></span>
-    
-      <small>Float</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Float.html#ceil_to-instance_method" title="Float#ceil_to (method)">#ceil_to</a></span>
-    
-      <small>Float</small>
-    
+    <small>Float</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#ceil_at-instance_method" title="Numeric#ceil_at (method)">#ceil_at</a></span>
+    <small>Numeric</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Numeric.html#ceil_to-instance_method" title="Numeric#ceil_to (method)">#ceil_to</a></span>
-    
-      <small>Numeric</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#floor_at-instance_method" title="Numeric#floor_at (method)">#floor_at</a></span>
-    
-      <small>Numeric</small>
-    
+    <small>Numeric</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Float.html#ceil_to-instance_method" title="Float#ceil_to (method)">#ceil_to</a></span>
+    <small>Float</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Float.html#floor_at-instance_method" title="Float#floor_at (method)">#floor_at</a></span>
-    
-      <small>Float</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#floor_to-instance_method" title="Numeric#floor_to (method)">#floor_to</a></span>
-    
-      <small>Numeric</small>
-    
+    <small>Float</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#floor_at-instance_method" title="Numeric#floor_at (method)">#floor_at</a></span>
+    <small>Numeric</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Float.html#floor_to-instance_method" title="Float#floor_to (method)">#floor_to</a></span>
-    
-      <small>Float</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Float.html#round_at-instance_method" title="Float#round_at (method)">#round_at</a></span>
-    
-      <small>Float</small>
-    
+    <small>Float</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#floor_to-instance_method" title="Numeric#floor_to (method)">#floor_to</a></span>
+    <small>Numeric</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Numeric.html#round_at-instance_method" title="Numeric#round_at (method)">#round_at</a></span>
-    
-      <small>Numeric</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#round_to-instance_method" title="Numeric#round_to (method)">#round_to</a></span>
-    
-      <small>Numeric</small>
-    
+    <small>Numeric</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Float.html#round_at-instance_method" title="Float#round_at (method)">#round_at</a></span>
+    <small>Float</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Float.html#round_to-instance_method" title="Float#round_to (method)">#round_to</a></span>
-    
-      <small>Float</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#truncate_at-instance_method" title="Numeric#truncate_at (method)">#truncate_at</a></span>
-    
-      <small>Numeric</small>
-    
+    <small>Float</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#round_to-instance_method" title="Numeric#round_to (method)">#round_to</a></span>
+    <small>Numeric</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Float.html#truncate_at-instance_method" title="Float#truncate_at (method)">#truncate_at</a></span>
-    
-      <small>Float</small>
-    
-  </li>
-  
-
-  <li class="r1 ">
-    <span class='object_link'><a href="Numeric.html#truncate_to-instance_method" title="Numeric#truncate_to (method)">#truncate_to</a></span>
-    
-      <small>Numeric</small>
-    
+    <small>Float</small>
   </li>
   
 
   <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#truncate_at-instance_method" title="Numeric#truncate_at (method)">#truncate_at</a></span>
+    <small>Numeric</small>
+  </li>
+  
+
+  <li class="r1 ">
     <span class='object_link'><a href="Float.html#truncate_to-instance_method" title="Float#truncate_to (method)">#truncate_to</a></span>
-    
-      <small>Float</small>
-    
+    <small>Float</small>
+  </li>
+  
+
+  <li class="r2 ">
+    <span class='object_link'><a href="Numeric.html#truncate_to-instance_method" title="Numeric#truncate_to (method)">#truncate_to</a></span>
+    <small>Numeric</small>
   </li>
   
 

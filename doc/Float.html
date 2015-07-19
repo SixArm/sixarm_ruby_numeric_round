@@ -6,18 +6,18 @@
 <title>
   Class: Float
   
-    &mdash; Documentation by YARD 0.8.1
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!" + escape(window.location.href);
+  framesUrl = "frames.html#!Float.html";
 </script>
 
 
@@ -94,12 +94,23 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/sixarm_ruby_numeric_round.rb</dd>
+    <dd class="r2 last">lib/sixarm_ruby_numeric_round/float.rb</dd>
   
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Float extensions to calculate round numbers.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -329,10 +340,11 @@
     
 <p>Ceil to the given decimal position.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 5.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 5.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.6
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.56
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -348,12 +360,12 @@
       <pre class="lines">
 
 
-85
-86
-87</pre>
+17
+18
+19</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_at'>ceil_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -377,10 +389,11 @@
     
 <p>Ceils to the nearest _n_th degree.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 5.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 5.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='float'>0.1</span><span class='rparen'>)</span>   <span class='comment'>#=&gt; 4.6
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='float'>0.01</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.56
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -396,13 +409,13 @@
       <pre class="lines">
 
 
-98
-99
-100
-101</pre>
+30
+31
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ceil_to'>ceil_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -427,10 +440,11 @@
     
 <p>Floor to the given decimal position.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.5
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -446,12 +460,12 @@
       <pre class="lines">
 
 
-112
-113
-114</pre>
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_at'>floor_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -475,10 +489,11 @@
     
 <p>Floors to the nearest _n_th degree.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='float'>0.1</span><span class='rparen'>)</span>   <span class='comment'>#=&gt; 4.5
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='float'>0.01</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -494,13 +509,13 @@
       <pre class="lines">
 
 
-125
-126
-127
-128</pre>
+57
+58
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 57</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_floor_to'>floor_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -525,10 +540,11 @@
     
 <p>Round to the given decimal position.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 5.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 5.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.6
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.56
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -544,12 +560,12 @@
       <pre class="lines">
 
 
-139
-140
-141</pre>
+71
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 139</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_at'>round_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -573,10 +589,11 @@
     
 <p>Rounds to the nearest _n_th degree.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 5
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 5
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='float'>0.1</span><span class='rparen'>)</span>   <span class='comment'>#=&gt; 4.6
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='float'>0.01</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.56
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -592,13 +609,13 @@
       <pre class="lines">
 
 
-152
-153
-154
-155</pre>
+84
+85
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 152</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 84</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_round_to'>round_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -623,10 +640,11 @@
     
 <p>Truncate to the given decimal position.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.5
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -642,12 +660,12 @@
       <pre class="lines">
 
 
-166
-167
-168</pre>
+98
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 166</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_truncate_at'>truncate_at</span><span class='lparen'>(</span> <span class='id identifier rubyid_d'>d</span> <span class='rparen'>)</span> <span class='comment'>#d=0
 </span>  <span class='lparen'>(</span><span class='kw'>self</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_truncate'>truncate</span><span class='period'>.</span><span class='id identifier rubyid_fdiv'>fdiv</span> <span class='lparen'>(</span><span class='int'>10</span> <span class='op'>**</span> <span class='id identifier rubyid_d'>d</span><span class='rparen'>)</span>
@@ -671,10 +689,11 @@
     
 <p>Truncates to the nearest _n_th degree.</p>
 
-<pre class="code ruby"><code><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.0
+<pre class="code ruby"><code class="ruby"><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.0
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='float'>0.1</span><span class='rparen'>)</span>   <span class='comment'>#=&gt; 4.5
 </span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='float'>0.01</span><span class='rparen'>)</span>  <span class='comment'>#=&gt; 4.55
-</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555</span></code></pre>
+</span><span class='float'>4.555</span><span class='period'>.</span><span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>     <span class='comment'>#=&gt; 4.555
+</span></code></pre>
 
 <p>CREDIT: Trans &amp; Joel Parker Henderson</p>
 
@@ -690,13 +709,13 @@
       <pre class="lines">
 
 
-179
-180
-181
-182</pre>
+111
+112
+113
+114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round.rb', line 179</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_numeric_round/float.rb', line 111</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_truncate_to'>truncate_to</span><span class='lparen'>(</span> <span class='id identifier rubyid_n'>n</span> <span class='rparen'>)</span> <span class='comment'>#n=1
 </span>  <span class='kw'>return</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_n'>n</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -712,9 +731,9 @@
 </div>
 
     <div id="footer">
-  Generated on Sat Sep  1 19:25:23 2012 by
+  Generated on Sat Jul 18 22:49:38 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.1 (ruby-1.9.3).
+  0.8.7.6 (ruby-2.2.2).
 </div>
 
   </body>
