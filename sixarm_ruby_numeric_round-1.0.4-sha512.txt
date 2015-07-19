@@ -1,0 +1,1 @@
+1330e23adba88796d96cb7fda4dcb5634c1f5896112acf67def2b4cedd17256856a9a5eb0de20af8d27797d573bcdd9d57871151b47c8c4de7d81ac0d5b4450c  sixarm_ruby_numeric_round-1.0.4.gem
