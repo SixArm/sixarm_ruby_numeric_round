@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_numeric_round"
-  s.summary        = "SixArm.com » Ruby » Numeric round methods"
+  s.summary        = "SixArm.com → Ruby → Numeric round methods"
   s.description    = "Numeric #round, #floor, #ceil, #truncate methods"
   s.version        = "1.0.4"
 
