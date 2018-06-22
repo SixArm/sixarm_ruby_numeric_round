@@ -5,13 +5,12 @@
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_numeric_round.svg)](http://badge.fury.io/rb/sixarm_ruby_numeric_round)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_numeric_round.png)](https://travis-ci.org/SixArm/sixarm_ruby_numeric_round)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/1cf9d84964d38caab79a/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_numeric_round/maintainability)
-[![Coverage Status](https://coveralls.io/repos/SixArm/sixarm_ruby_numeric_round/badge.svg?branch=master&service=github)](https://coveralls.io/github/SixArm/sixarm_ruby_numeric_round?branch=master)
 
 * Git: <https://github.com/sixarm/sixarm_ruby_numeric_round>
 * Doc: <http://sixarm.com/sixarm_ruby_numeric_round/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_numeric_round>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
-* Project: [Changes](CHANGES.md), [License](LICENSE.md), [Contributing](CONTRIBUTING.md).
+* Project: [changes](CHANGES.md), [license](LICENSE.md), [contributing](CONTRIBUTING.md).
 
 <!--header-shut-->
 
@@ -25,7 +24,7 @@ For docs go to <http://sixarm.com/sixarm_ruby_numeric_round/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--install-opent-->
+<!--install-open-->
 
 ## Install
 
