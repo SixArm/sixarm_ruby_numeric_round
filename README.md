@@ -4,9 +4,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_numeric_round.svg)](http://badge.fury.io/rb/sixarm_ruby_numeric_round)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_numeric_round.png)](https://travis-ci.org/SixArm/sixarm_ruby_numeric_round)
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/1cf9d84964d38caab79a/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_numeric_round/maintainability)
+[![Code Climate](https://api.codeclimate.com/v1/badges/1cf9d84964d38caab79a/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_numeric_round/maintainability)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_numeric_round>
+* Git: <https://github.com/SixArm/sixarm_ruby_numeric_round>
 * Doc: <http://sixarm.com/sixarm_ruby_numeric_round/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_numeric_round>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
@@ -30,11 +30,13 @@ Want to help? We're happy to get pull requests.
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_numeric_round
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_numeric_round'
 
